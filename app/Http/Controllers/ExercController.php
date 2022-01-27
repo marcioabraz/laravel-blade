@@ -18,8 +18,8 @@ class ExercController extends Controller
 
     public function images(Request $request)
     {
-        $request->file->storeAs('public.images', 'file.jpg');
-        $request->file2->storeAs('public.images', 'file2.jpg');
+        $request->image1->storeAs('public.images', 'file.jpg');
+        $request->image2->storeAs('public.images', 'file2.jpg');
         return 'ok';
     }
 }
