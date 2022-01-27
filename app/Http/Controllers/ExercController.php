@@ -10,9 +10,9 @@ class ExercController extends Controller
     public function photo(Request $request)
 
     {
-        $path = $request->photo->storeAs('public', 'file.jpg');
+        $request->photo->storeAs('public', 'file.jpg');
  
-        return $path;
+        return 'deu certo';
 
     }
 }
