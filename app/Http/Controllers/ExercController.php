@@ -27,7 +27,7 @@ class ExercController extends Controller
     {
         $request->file->store('public.documents');
 
-        $path = $request->file->storeAs('public/documents',$request->file->name);
+        $request->file->storeAs('public/documents',$request->file->name);
  
         return 'deu certo';
 
