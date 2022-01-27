@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::post('/photo', [ExercController::class, 'photo']);
+Route::post('/images', [ExercController::class, 'images']);

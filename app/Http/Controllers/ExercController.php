@@ -15,4 +15,11 @@ class ExercController extends Controller
         return 'deu certo';
 
     }
+
+    public function images(Request $request)
+    {
+        $request->file->storeAs('public.images', 'file.jpg');
+        $request->file2->storeAs('public.images', 'file2.jpg');
+        return 'ok';
+    }
 }
