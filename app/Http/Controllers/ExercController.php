@@ -22,4 +22,12 @@ class ExercController extends Controller
         $request->image2->storeAs('public.images', 'file2.jpg');
         return 'ok';
     }
+    public function document(Request $request)
+
+    {
+        $request->file->store('public.documents');
+ 
+        return 'deu certo';
+
+    }
 }
